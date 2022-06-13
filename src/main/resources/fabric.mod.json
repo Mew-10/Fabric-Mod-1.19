@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "fabricmo",
+  "version": "${version}",
+
+  "name": "Fabric Mod",
+  "description": "This Is A 1.19 Mod",
+  "authors": [
+    "Benjamin!"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/fabricmo/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.benjamin.fabricmo.FabricMo"
+    ],
+    "client": [
+      "net.benjamin.fabricmo.FabricMoClient"
+    ]
+  },
+  "mixins": [
+    "fabricmo.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
